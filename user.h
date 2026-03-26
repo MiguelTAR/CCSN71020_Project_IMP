@@ -7,7 +7,7 @@
 
 #define USERNAME_MAXLEN 30
 #define USERNAME_MINLEN 5
-#define EMAIL_LEN 30
+#define EMAIL_LEN 50
 #define PASSWORD_MAXLEN 30
 #define PASSWORD_MINLEN 8
 #define TYPE_LEN 20
@@ -15,4 +15,3 @@
 #define CITY_LEN 20
 
 #endif // !CONSTANTS_H
-
