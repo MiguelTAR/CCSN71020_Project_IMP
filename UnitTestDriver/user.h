@@ -1,3 +1,5 @@
+#ifndef CONSTANTS_H
+
 #define CONSTANTS_H
 
 #define MAX_USERNAME 2
@@ -11,3 +13,6 @@
 #define TYPE_LEN 20
 #define ADDRESS_LEN 50
 #define CITY_LEN 20
+
+#endif // !CONSTANTS_H
+
