@@ -5,21 +5,26 @@
 
 typedef struct {
     int id;
-    char type[TYPE_LEN];
-    double price;
-    int rooms;
+    double monthlyRent;
+    char Type[TYPE_LEN];
+    int bedrooms;
     int bathrooms;
-    double sqft;
-    char address[ADDRESS_LEN];
-    char city[CITY_LEN];
+    char location[LOCATION_LEN];
 } Listing;
 
-int addRentalListing(const char type[], double price, int rooms, int bathrooms,
-    double sqft, const char address[], const char city[]);
+int loadListings(const char* filename, Listing listing[], int maxListing);
+int saveListings(const char* filename, Listing listing[], int count);
 
-int searchListing(const char type[], double maxPrice, int minRooms, int minBathrooms,
-    const char city[], double minSqft);
+int addListing_txt(const char* filename, double monthlyRent,
+    const char* type[], int bedrooms,
+    const char location[]);
 
-int deleteListing(int listingId);
+int delete_item_txt(const char* filename, int id_delete);
+
+int search_listing_txt(const char* filename,
+    const char* type_filter, const char* located_filter,
+    int minbedrooms, double maxRent);
+
+void view_listings_txt(const char* filename);
 
 #endif

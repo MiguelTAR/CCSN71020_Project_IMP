@@ -8,8 +8,7 @@
 #define EMAIL_LEN 50
 #define PASSWORD_LEN 30
 #define TYPE_LEN 20
-#define ADDRESS_LEN 100
-#define CITY_LEN 40
+#define LOCATION_LEN 40
 
 #endif
 
