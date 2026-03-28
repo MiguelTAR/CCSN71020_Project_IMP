@@ -5,6 +5,7 @@
 char username, email, password, usernameInput, passwordInput;
 
 userRegistration();
+
 userLogin();
 
 
