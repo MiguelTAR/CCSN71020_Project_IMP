@@ -129,8 +129,11 @@
   <ItemGroup>
     <ClCompile Include="Listing.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="user.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="user.h" />
     <ClInclude Include="Constants.h" />
     <ClInclude Include="Listing.h" />
   </ItemGroup>
