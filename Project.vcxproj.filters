@@ -1,42 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
+    <ClCompile Include="Listing.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
     <ClCompile Include="main.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="user.c">
-    <ClCompile Include="Listing.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Constants.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Listing.h">
-      <Filter>Header Files</Filter>
+      <Filter>header files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>header files</Filter>
     </ClInclude>
     <ClInclude Include="user.h">
-      <Filter>Header Files</Filter>
+      <Filter>header files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="header files">
+      <UniqueIdentifier>{53d3d4e5-0a57-4f65-9607-2627a7d80d03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{a9256772-2b5f-4d02-a39a-554dec403c94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Text file">
+      <UniqueIdentifier>{319286a3-2b77-4ea0-ab47-7d7baf558581}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="list.txt">
-      <Filter>Resource Files</Filter>
+      <Filter>Text file</Filter>
     </Text>
   </ItemGroup>
 </Project>
