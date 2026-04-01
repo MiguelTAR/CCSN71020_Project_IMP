@@ -71,6 +71,7 @@ int saveListing(const char* filename, Listing Listing[], int count) {
 		fprintf(file, "bedrooms: %d\n", Listing[i].bedrooms);
 		fprintf(file, "Location: %s\n", Listing[i].location);
 
+		//add blank line between listings
 			if (i < count - 1) {
 				fprintf(file, "\n");
 			}
