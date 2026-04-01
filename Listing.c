@@ -45,6 +45,19 @@ int loadListings(const char* filename, Listing listing[], int maxListing) {
 
 			count++;
 
+			//reset fields for next listing
+			rent = -1;
+			bedrooms = -1;
+			type[0] = '\0';
+			location[0] = '\0';
+
+		}
+
+	}
+
+	fclose(file);
+	return count;
+
 
 
 }
