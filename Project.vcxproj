@@ -127,15 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Listing.c" />
+    <ClCompile Include="listing.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="user.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
     <ClInclude Include="user.h" />
-    <ClInclude Include="Constants.h" />
-    <ClInclude Include="Listing.h" />
+    <ClInclude Include="constants.h" />
+    <ClInclude Include="listing.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="list.txt" />
