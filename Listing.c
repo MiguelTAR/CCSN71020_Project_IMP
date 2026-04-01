@@ -45,7 +45,53 @@ int loadListings(const char* filename, Listing listing[], int maxListing) {
 
 			count++;
 
+			//reset fields for next listing
+			rent = -1;
+			bedrooms = -1;
+			type[0] = '\0';
+			location[0] = '\0';
 
+		}
+
+	}
+
+	fclose(file);
+	return count;
+
+}
+
+int saveListing(const char* filename, Listing Listing[], int count) {
+
+	FILE*file = fopen(filename, "w");
+	if (!file) return 0;
+
+	for (int i = 0; i < count; i++) {
+		fprintf(file, "Monthly Rent: %.2f\n", Listing[i].monthlyRent);
+		fprintf(file, "Type of housing: %s\n", Listing[i].Type);
+		fprintf(file, "bedrooms: %d\n", Listing[i].bedrooms);
+		fprintf(file, "Location: %s\n", Listing[i].location);
+
+			if (i < count - 1) {
+				fprintf(file, "\n");
+			}
+
+	}
+	
+	
+	fclose(file);
+	return 1;
+	
+}
+
+int addlisting(const char* filename, double monthlyRent,
+	const char Type[], int bedrooms,
+	const char location[])
+{
+	FILE*file = fopen(filename, "a");
+	if (!file) return 0;
+
+	fprintf(file, "Monthly Rent: %.2f\n", monthlyRent);
+	fprintf(file, "Type of housing: %s\n", Type);
 
 }
 
