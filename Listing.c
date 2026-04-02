@@ -83,7 +83,7 @@ int saveListing(const char* filename, Listing Listing[], int count) {
 	return 1;
 	
 }
-
+//in the document this function was once called 
 int addlisting(const char* filename, double monthlyRent,
 	const char Type[], int bedrooms,
 	const char location[])
