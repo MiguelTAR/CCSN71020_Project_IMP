@@ -2,71 +2,87 @@
 #include <string.h>
 #include "user.h"
 
-char username, email, password, usernameInput, passwordInput;
-
-userRegistration();
-
-userLogin();
+char username[], email[], password[], usernameInput[], passwordInput[];
 
 
-int userRegistration(char username, char email, char password)
+int userRegistration(char username[], char email[], char password[])
 {
 	printf("Enter Username: ");
-	scanf_s("%c\n", username);
+	scanf_s("%s\n", username, sizeof(username));
 
-	if (strleng(username) > USERNAME_MAXLEN)
+	if (strlen(username) > USERNAME_MAXLEN)
 	{
-		printf("Username to long");
+		printf("Username too long");
+		return;
 	}
 	else if (strleng(username) < USERNAME_MINLEN)
 	{
 		printf("Username to short");
-	};
-	printf("Enter Email: ");
-	scanf_s("%c\n", email);
+		return;
+	}
 
-	if (strleng(email) > EMAIL_LEN)
+	printf("Enter Email: ");
+	scanf_s("%s\n", email, sizeof(email));
+
+	if (strlen(email) > EMAIL_LEN)
 	{
-		printf("email to long");
-	};
+		printf("Email too long");
+		return;
+	}
+	else {
+
+		if (strchr(email, '@') && strchr(email,'.'))
+		{
+			printf("Email Saved");
+		}
+		else{
+			printf("Email Not valid");
+			return;
+		}
+
+	}
 
 	printf("Enter Password");
-	scanf_s("%c\n", password);
+	scanf_s("%s\n", password);
 
-	if (strleng(password) > PASSWORD_MAXLEN)
+	if (strlen(password) > PASSWORD_MAXLEN)
 	{
-		printf("Username to long");
+		printf("Password too long");
+		return;
 	}
-	else if (strleng(username) < PASSWORD_MINLEN)
+	else if (strlen(password) < PASSWORD_MINLEN)
 	{
-		printf("Username to short");
+		printf("Password too short");
+		return;
 	}
+	return 0;
+}
 
-};
-
-int userLogin(char username, char password)
+int userLogin(char username[], char password[])
 {
 
 	printf("Enter Username: ");
-	scanf_s("%c\n", usernameInput);
-	if (usernameInput == username)
+	scanf_s("%s\n", usernameInput);
+	if (strcmp (usernameInput,username) == 0)
 	{
 		printf("Username Found");
 	}
-	else {
+	else {	
 		printf("Wrong Username");
+		return;
 	}
 
 	printf("Enter Password: ");
-	scanf_s("%c\n", passwordInput);
-	if (passwordInput == password)
+	scanf_s("%s\n", passwordInput);
+	if (strcmp (passwordInput,password) == 0)
 	{
 		printf("Login Succesfull");
 	}
 	else {
 		printf("Wrong Password");
+		return;
 	}
 
-
-};
+	return 0;
+}
 
