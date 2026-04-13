@@ -1,0 +1,13 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="AddListingUnitTest/AddListingUnitTest.vcxproj" />
+  <Project Path="CalculateRentalCostUnitTest/CalculateRentalCostUnitTest.vcxproj" />
+  <Project Path="Project5/Project5.vcxproj" Id="c4f32190-9c16-4b83-a348-ae4add5ecea9" />
+  <Project Path="SearchListingUnitTest/SearchListingUnitTest.vcxproj" />
+  <Project Path="user/user.vcxproj" Id="68bbadce-3b75-437d-81f8-dfbd804634ca" />
+  <Project Path="UserLoginUserTest/UserLoginUserTest.vcxproj" />
+  <Project Path="UserRegistrationUnitTest/UserRegistrationUnitTest.vcxproj" />
+</Solution>
