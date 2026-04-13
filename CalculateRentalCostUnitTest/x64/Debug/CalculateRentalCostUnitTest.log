@@ -1,0 +1,25 @@
+﻿  CalculateRentalCostUnitTest.cpp
+C:\Users\nicho\source\repos\Project5\CalculateRentalCostUnitTest\CalculateRentalCostUnitTest.cpp(18,28): error C3861: 'calculateCost': identifier not found
+  (compiling source file '/CalculateRentalCostUnitTest.cpp')
+  
+C:\Users\nicho\source\repos\Project5\CalculateRentalCostUnitTest\CalculateRentalCostUnitTest.cpp(25,34): error C3861: 'calculateCost': identifier not found
+  (compiling source file '/CalculateRentalCostUnitTest.cpp')
+  
+C:\Users\nicho\source\repos\Project5\CalculateRentalCostUnitTest\CalculateRentalCostUnitTest.cpp(37,25): error C3861: 'calculateCost': identifier not found
+  (compiling source file '/CalculateRentalCostUnitTest.cpp')
+  
+C:\Users\nicho\source\repos\Project5\CalculateRentalCostUnitTest\CalculateRentalCostUnitTest.cpp(44,25): error C3861: 'calculateCost': identifier not found
+  (compiling source file '/CalculateRentalCostUnitTest.cpp')
+  
+C:\Users\nicho\source\repos\Project5\CalculateRentalCostUnitTest\CalculateRentalCostUnitTest.cpp(51,25): error C3861: 'calculateCost': identifier not found
+  (compiling source file '/CalculateRentalCostUnitTest.cpp')
+  
+C:\Users\nicho\source\repos\Project5\CalculateRentalCostUnitTest\CalculateRentalCostUnitTest.cpp(63,25): error C3861: 'calculateCost': identifier not found
+  (compiling source file '/CalculateRentalCostUnitTest.cpp')
+  
+C:\Users\nicho\source\repos\Project5\CalculateRentalCostUnitTest\CalculateRentalCostUnitTest.cpp(70,25): error C3861: 'calculateCost': identifier not found
+  (compiling source file '/CalculateRentalCostUnitTest.cpp')
+  
+C:\Users\nicho\source\repos\Project5\CalculateRentalCostUnitTest\CalculateRentalCostUnitTest.cpp(77,25): error C3861: 'calculateCost': identifier not found
+  (compiling source file '/CalculateRentalCostUnitTest.cpp')
+  

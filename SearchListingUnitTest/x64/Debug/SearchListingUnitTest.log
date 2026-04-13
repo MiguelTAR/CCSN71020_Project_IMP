@@ -1,0 +1,4 @@
+﻿  SearchListingUnitTest.cpp
+     Creating library C:\Users\nicho\source\repos\Project5\x64\Debug\SearchListingUnitTest.lib and object C:\Users\nicho\source\repos\Project5\x64\Debug\SearchListingUnitTest.exp
+SearchListingUnitTest.obj : error LNK2019: unresolved external symbol search_listing_txt referenced in function "public: void __cdecl UnitTestDriver::SearchListingExceptionTests::Bedroom_Count_Is_Negative(void)" (?Bedroom_Count_Is_Negative@SearchListingExceptionTests@UnitTestDriver@@QEAAXXZ)
+C:\Users\nicho\source\repos\Project5\x64\Debug\SearchListingUnitTest.dll : fatal error LNK1120: 1 unresolved externals

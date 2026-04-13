@@ -1,0 +1,53 @@
+Example 1
+monthly rent: $1400
+type of housing: Apartment
+bedrooms: 1
+location: Kitchener
+
+Example 2
+monthly rent: $1800
+type of housing: Condo
+bedrooms: 2
+location: Kitchener
+
+Example 3
+monthly rent: $2200
+type of housing: Townhouse
+bedrooms: 3
+location: Kitchener
+
+Example 4
+monthly rent: $1200
+type of housing: Apartment
+bedrooms: 1
+location: Cambridge
+
+Example 5
+monthly rent: $1800
+type of housing: Condo
+bedrooms: 2
+location: Cambridge
+
+Example 6
+monthly rent: $2200
+type of housing: Townhouse
+bedrooms: 4
+location: Cambridge
+
+Example 7
+monthly rent: $1200
+type of housing: Apartment
+bedrooms: 1
+location: Waterloo
+
+Example 8
+monthly rent: $1800
+type of housing: Condo
+bedrooms: 2
+location: Waterloo
+
+Example 9
+monthly rent: $2250
+type of housing: Townhouse
+bedrooms: 1
+location: Waterloo
