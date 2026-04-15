@@ -1,0 +1,3 @@
+﻿user.obj : error LNK2019: unresolved external symbol strleng referenced in function userRegistration
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\nicho\Downloads\CCSN71020_Project_IMP-testing\CCSN71020_Project_IMP-testing\x64\Debug\user.exe : fatal error LNK1120: 2 unresolved externals
