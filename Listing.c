@@ -60,7 +60,7 @@ int loadListings(const char* filename, Listing listing[], int maxListing) {
 
 }
 
-int saveListing(const char* filename, Listing Listing[], int count) {
+int saveListings(const char* filename, Listing Listing[], int count) {
 
 	FILE*file = fopen(filename, "w");
 	if (!file) return 0;
@@ -81,10 +81,10 @@ int saveListing(const char* filename, Listing Listing[], int count) {
 	
 	fclose(file);
 	return 1;
-	
-}
+}	
+
 //in the document this function was once called 
-int addlisting(const char* filename, double monthlyRent,
+int addlisting_txt(const char* filename, double monthlyRent,
 	const char Type[], int bedrooms,
 	const char location[])
 {
@@ -95,4 +95,85 @@ int addlisting(const char* filename, double monthlyRent,
 	fprintf(file, "Type of housing: %s\n", Type);
 
 }
+
+int delete_item_txt(const char* filename, int ID_delete) {
+	Listing listings[MAX_LISTINGS];
+	int count = loadListings(filename, listings, MAX_LISTINGS);
+	if (count <= 0) return 0;
+
+	if (ID_delete < 1 || ID_delete > count) return 0;
+
+	for (int i = 0; i < count; i++)
+		listings[i].id = i + 1;
+
+	return saveListing(filename, listings, count - 1);
+
+}
+
+
+
+int search_listing_txt(const char* filename,
+				const char* typeFilter,
+	const char* locationFilter,
+	int minBedrooms,
+	double maxRent)
+{
+	Listing listings[MAX_LISTINGS];
+	int count = loadListings(filename, listings, MAX_LISTINGS);
+	if (count <= 0) return 0;
+
+	int matches = 0;
+
+	for (int i = 0; i < count; i++) {
+		int ok = 1;
+
+		if (typeFilter && strlen(typeFilter) > 0 &&
+			strcmp(listings[i].Type, typeFilter) != 0)
+			ok = 0;
+
+		if (locationFilter && strlen(locationFilter) > 0 &&
+			strcmp(listings[i].location, locationFilter) != 0)
+			ok = 0;
+
+		if (minBedrooms > 0 && listings[i].bedrooms < minBedrooms)
+			ok = 0;
+
+		if (maxRent > 0 && listings[i].monthlyRent > maxRent)
+			ok = 0;
+
+		if (ok)
+			matches++;
+	}
+
+	return matches;
+}
+void view_listing_txt(const char* filename)
+{
+	Listing listings[MAX_LISTINGS];
+	int count = loadListings(filename, listings, MAX_LISTINGS);
+
+	if (count <= 0) {
+		printf("No listings found or could not read file.\n");
+		return;
+	}
+
+	printf("\n--- Current Listings ---\n");
+
+	for (int i = 0; i < count; i++) {
+		printf("ID: %d\n", listings[i].id);
+		printf("  Monthly rent: $%.2f\n", listings[i].monthlyRent);
+		printf("  Type of housing: %s\n", listings[i].Type);
+		printf("  Bedrooms: %d\n", listings[i].bedrooms);
+		printf("  Location: %s\n\n", listings[i].location);
+	}
+
+	// NEW FEATURE: Print total number of listings
+	printf("Total listings posted: %d\n", count);
+
+	// NEW FEATURE: Receipt summary
+	printf("\n----- RECEIPT -----\n");
+	printf("Total listings processed: %d\n", count);
+	printf("-------------------\n");
+}
+
 
