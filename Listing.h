@@ -1,6 +1,7 @@
 #ifndef LISTING_H
 #define LISTING_H
 #include "constants.h"
+#define LOCATION_LEN 50
 
 
 typedef struct {
