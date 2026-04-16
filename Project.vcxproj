@@ -130,12 +130,14 @@
     <ClCompile Include="Listing.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="user.c" />
+    <ClCompile Include="ztest.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
     <ClInclude Include="user.h" />
     <ClInclude Include="Constants.h" />
     <ClInclude Include="Listing.h" />
+    <ClInclude Include="ztest.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="list.txt" />

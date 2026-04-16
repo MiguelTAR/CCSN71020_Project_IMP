@@ -10,6 +10,7 @@
     <ClCompile Include="user.c">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="ztest.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Listing.h">
@@ -22,6 +23,9 @@
       <Filter>header files</Filter>
     </ClInclude>
     <ClInclude Include="user.h">
+      <Filter>header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ztest.h">
       <Filter>header files</Filter>
     </ClInclude>
   </ItemGroup>
